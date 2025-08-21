@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="Unique%20Light%20Portfolio_files/css2.css" rel="stylesheet">
+  <link rel="stylesheet" href="Unique%20Light%20Portfolio_files/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="script.js">
+  <style>
+    :root {
+      --bg: #f9fafc;             /* light base */
+      --card: #ffffff;           /* surfaces */
+      --text: #24324a;           /* primary text */
+      --subtext: #5b6b86;        /* secondary text */
+      --brand: #7b7ef6;          /* primary accent */
+      --brand-2: #9be7d3;        /* mint accent */
+      --brand-3: #ffd3a4;        /* peach accent */
+      --ring: rgba(123, 126, 246, .35);
+      --shadow: 0 10px 30px rgba(25, 36, 76, .08);
+      --radius: 18px;
+    }
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand"><span class="dot"></span> <span><span style="color:var(--brand)"></span></span></div>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamb" id="hamb" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="hero-card">
+      <span class="tag"><i class="fa-solid fa-sparkles"></i> Available for Opportunities</span>
+      <h1>Hi, I'm <span style="color:var(--brand)">Lakshana</span></h1>
+      <h3 id="typed" aria-live="polite">Frontend Engineer</h3>
+      <p class="sub">Aspiring frontend developer with a background in ECE, eager to build responsive and impactful web applications.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects"><i class="fa-solid fa-briefcase"></i> View Projects</a>
+        <a class="btn ghost" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+      </div>
+      <div class="socials">
+        <a class="github" href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="blob" role="img" aria-label="playful pastel gradient blob"></div>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="about" class="wrap reveal on">
+    <h2>About Me</h2>
+    <p class="lead">"I am an ECE student with knowledge in electronics and communication fundamentals. I have also learned basic web development skills like HTML, CSS, and JavaScript. I am passionate about exploring both hardware and software fields and applying my skills through projects and internships."</p>
+  </section>
+
+
+  <!-- EDUCATION -->
+<section id="education" class="wrap reveal on">
+  <h2>Education</h2>
+  <div class="skills-grid">
+
+    <div class="skill">
+      <i class="fa-solid fa-user-graduate"></i>
+      <strong>BE - Electronics & Communication Engineering</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">P.S.R Engineering College, Sivakasi</p>
+      <div class="meter"><span style="--t: 90%; width: 90%;"></span></div>
+      <small>CGPA: 9.05</small>
+    </div>
+
+    <div class="skill">
+      <i class="fa-solid fa-school"></i>
+      <strong>Higher Secondary Certificate (HSC)</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">S.N.M Matric Hr Sec School, Sivakasi</p>
+      <div class="meter"><span style="--t: 78%; width: 78%;"></span></div>
+      <small>Percentage: 78.33%</small>
+    </div>
+
+    <div class="skill">
+      <i class="fa-solid fa-school-flag"></i>
+      <strong>Secondary School Leaving Certificate (SSLC)</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">S.N.M Matric Hr Sec School, Sivakasi</p>
+      <div class="meter"><span style="--t: 82%; width: 82%;"></span></div>
+      <small>Percentage: 81.8%</small>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+  <section id="skills" class="wrap reveal on">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="fab fa-html5"></i>HTML
+        <div class="meter"><span style="--t: 90%; width: 90%;"></span></div>
+      </div>
+      <div class="skill"><i class="fab fa-css3-alt"></i>CSS
+        <div class="meter"><span style="--t: 88%; width: 88%;"></span></div>
+      </div>
+      <div class="skill"><i class="fab fa-js"></i>JavaScript
+        <div class="meter"><span style="--t: 85%; width: 85%;"></span></div>
+      </div>
+      <div class="skill"><i class="fa-solid fa-database"></i>C
+        <div class="meter"><span style="--t: 75%; width: 75%;"></span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- INTERNSHIPS -->
+<section id="internships" class="wrap reveal on">
+  <h2>Internship</h2>
+  <div class="skills-grid">
+    
+    <div class="skill">
+      <i class="fa-solid fa-code"></i>
+      <strong>Full-Stack Web Development</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">RECCSAR Pvt Ltd, Madurai</p>
+      <div class="meter"><span style="--t: 100%; width: 100%;"></span></div>
+      <small>Completed Internship</small>
+    </div>
+
+    <div class="skill">
+      <i class="fa-solid fa-microchip"></i>
+      <strong>VLSI (6 Months)</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">Taras Systems &amp; Solutions</p>
+      <div class="meter"><span style="--t: 100%; width: 100%;"></span></div>
+      <small>Completed Internship</small>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="wrap reveal on">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="thumb"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="card-body">
+          <img src="C:\Users\22EC046\Downloads\images.jfif" alt="images" width="300">
+          <h3>Automated Loan Approval System</h3>
+          <p class="lead">Built a smart system to evaluate loan eligibility using predefined financial criteria.</p>
+          <span class="pill">Java</span>
+          <div style="margin-top:12px"><button class="btn ghost open" data-title="Automated Loan Approval System" data-desc="Single-file, fast loading, animated sections and smooth navigation." aria-label="Details">Details</button></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="card-body">
+        <img src="C:\Users\22EC046\Downloads\download.jfif" alt="download" width="300">
+          <h3>FPGA Smart Current Monitoring System</h3>
+          <p class="lead">Designed a hardware system on FPGA to monitor and analyze current flow in real time.</p>
+          <span class="pill">Verilog</span>
+          <div style="margin-top:12px"><button class="btn ghost open" data-title="Analytics Dashboard" data-desc="Data viz dashboard with CSV import and client‑side charts.">Details</button></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+<section id="certifications" class="wrap reveal on">
+  <h2>Certifications</h2>
+  <div class="skills-grid">
+    
+    <div class="skill">
+      <i class="fa-brands fa-java"></i>
+      <strong>Java Programming Fundamentals</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">Infosys Springboard</p>
+      <div class="meter"><span style="--t: 100%; width: 100%;"></span></div>
+      <small>Completed</small>
+    </div>
+
+    <div class="skill">
+      <i class="fa-solid fa-code"></i>
+      <strong>Full Stack Development</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">NoviTech R&amp;D Pvt Ltd</p>
+      <div class="meter"><span style="--t: 100%; width: 100%;"></span></div>
+      <small>Completed</small>
+    </div>
+
+    <div class="skill">
+      <i class="fab fa-css3-alt"></i>
+      <strong>CSS Tutorials</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">Great Learning</p>
+      <div class="meter"><span style="--t: 100%; width: 100%;"></span></div>
+      <small>Completed</small>
+    </div>
+
+    <div class="skill">
+      <i class="fa-solid fa-wifi"></i>
+      <strong>Introduction to IoT (Elite)</strong>
+      <p style="color:var(--subtext); font-size:14px; margin:6px 0;">NPTEL</p>
+      <div class="meter"><span style="--t: 100%; width: 100%;"></span></div>
+      <small>Completed</small>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="wrap contact reveal on">
+    <form id="contactForm" novalidate="">
+      <h2>Contact Me</h2>
+      <input type="text" name="name" placeholder="Lakshana S" required="">
+      <input type="email" name="email" placeholder="lakshsundararaj0628@gmail.com" required="">
+      <input type="LinkedIn" name="LinkedIn" placeholder="https://www.linkedin.com/in/lakshana-sundararaj-3151aa2b6/?" required="">
+      <input type="Github" name="Github" placeholder="https://github.com/Lakshana2024" required="">
+      <button type="submit" class="btn primary submit"><i class="fa-regular fa-paper-plane"></i> Send</button>
+    </form>
+
+    <div class="contact-card">
+        <div class="socials" style="margin-top:10px">
+        <a class="github" href="https://github.com/Lakshana2024" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lakshana-sundararaj-3151aa2b6/?" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modal -->
+  <dialog id="projectModal" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-header">
+      <h3 id="modalTitle">Project</h3>
+      <button class="close" id="closeModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal-body">
+      <p id="modalDesc">Description</p>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="wrap">
+    © <span id="year">2025</span>
+  </footer>
